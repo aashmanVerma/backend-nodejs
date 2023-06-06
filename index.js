@@ -21,6 +21,9 @@ app.listen(port,()=>{
     })
 })
 
+app.get("/",(req,res)=>{
+    res.status(200).json("hello from server");
+})
 
 // route to get information from api
 app.get('/infoapi',async(req,res)=>{
